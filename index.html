@@ -1,1 +1,81 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in (quem é você)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+        form div {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0 5px;
+        }
+        form div label {
+            font-weight: bold;
+            text-shadow: black 1px 2px 3px;
+        }
+        form button {
+            margin-top: 10px;
+        }
+        .mini {
+            width: 33.333%;
+            min-width: 290px;
+        }
+    </style>
+</head>
+<body>
+    <form class="mini">
+        <div>
+            <label for="">Nome</label>
+            <input type="text" id="campo_Nome">
+        </div>
+        <div>
+            <label for="">Data de nacimento</label>
+            <input type="date" id="campo_DTnasc" t="1"></div>
+        <div>
+            <label for="">Idade</label>
+            <input type="text" id="campo_Idade" t="1"></div>
+        <div>
+            <label for="">CPF</label>
+            <input type="text" id="campo_CPF" t="1"></div>
+        <div>
+            <label for="">Usuario</label>
+            <input type="text" id="campo_UserName" t="1"></div>
+        <div>
+            <label for="">Senha</label>
+            <input type="text" id="campo_Pword" t="1"></div>
+        <div>
+            <label for="">Senha (repita)</label>
+            <input type="text" id="campo_PwordRep" t="1">
+        </div>
+        <button type="submit">entrar</button>
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    function trySwitch(function_try,function_except,function_ok) {
+        var ok = false
+        try {
+            function_tr = true
+        }
+    }
+    $(document).ready(() => {
+        $("form").submit(function (e) {
+            e.preventDefault()
+            var correto = false
+            try {
+                correto = true
+            } 
+            catch (ex) {
+            }
+            if(correto) {
+                this.submit()
+            }
+        })
+    })
+</script>
+</html>
